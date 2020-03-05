@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1729759449658044688}
   - component: {fileID: 6557028583318355941}
   m_Layer: 0
-  m_Name: SpaceShip 1
+  m_Name: RedShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9297731ec525b2348b34db2bea0a3498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lazerBeam: {fileID: 7473394659378100156, guid: 4c0ec07fc7ab4894cb94da1d59a5ee76,
+  lazerBeam: {fileID: 6656094742103503198, guid: 866dff8819500c04990bd30cf31a91c3,
     type: 3}
   player: {fileID: 1729759449658044695}
   projectileCooldown: 0.25

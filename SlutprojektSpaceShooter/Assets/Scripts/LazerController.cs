@@ -5,20 +5,23 @@ using UnityEngine;
 public class LazerController : MonoBehaviour
 {
     [SerializeField]
-    float speed = 1f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    protected float speed = 1f;
+    // Start is called before the first frame update  
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
+        DestroyLazer();
+        LazerMovement();
+    }
+    protected void DestroyLazer()
+    {
         if (transform.position.y > 8f)
         {
             Destroy(gameObject);
         }
+    }
+    protected virtual void LazerMovement()
+    {
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 }

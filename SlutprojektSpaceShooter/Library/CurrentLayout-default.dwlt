@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 879, y: 492}
   m_MaxSize: {x: 16004, y: 14042}
   vertical: 0
-  controlID: 38137
+  controlID: 12580
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 492}
   m_MaxSize: {x: 12004, y: 14042}
   vertical: 1
-  controlID: 38138
+  controlID: 12581
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 38139
+  controlID: 12582
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 237
     height: 388
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -292,8 +292,8 @@ MonoBehaviour:
     y: 0
     width: 279
     height: 731
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -418,9 +418,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 781affff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 821affff681bffff2027ffff4a29ffff5a2affff822affff722efffff42efffffc2fffff1636ffff4236ffff7843ffff1045ffffb84cffffa04dffff1a4fffff0c51ffff5451ffff5c57ffff1a60ffff2262ffffc466ffffda66ffff4a71ffff2282ffffa682ffff9a86ffff0688ffff18a0ffff26b9ffff54bbffff20f8ffff78f8ffff8cf9ffffc4f9ffff4efaffff74fbffff92350000fc490000024a00000c4a0000f24c0000f84c0000024d0000e4560000ec560000f6560000c25800004a610000526100005c6100008a610000e26d00005a700000ac7200006a740000
+      m_ExpandedIDs: 74fbffff86330000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -480,9 +480,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.6964065, y: -1.1024778, z: -5.747403}
+    m_Target: {x: 7.092355, y: 0.26578644, z: -21.47792}
     speed: 2
-    m_Value: {x: 1.6964065, y: -1.1024778, z: -5.747403}
+    m_Value: {x: 7.092355, y: 0.26578644, z: -21.47792}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -532,9 +532,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.400832
+    m_Target: 18.727259
     speed: 2
-    m_Value: 11.400832
+    m_Value: 18.727259
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -624,20 +624,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 73
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: 73
   m_LastProjectPath: C:\Users\filip.ericsson\Documents\UnityProjekt\Slutprojekt-SpaceShooter\SlutprojektSpaceShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 90330000
-    m_LastClickedID: 13200
-    m_ExpandedIDs: 000000008833000000ca9a3b
+    m_SelectedIDs: 68340000
+    m_LastClickedID: 13416
+    m_ExpandedIDs: 000000006434000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,7 +665,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008833000000ca9a3b
+    m_ExpandedIDs: 000000006434000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -744,7 +744,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 461.6
-    width: 1259
+    width: 1256
     height: 322
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &19

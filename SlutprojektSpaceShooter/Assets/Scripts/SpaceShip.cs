@@ -16,11 +16,8 @@ public class SpaceShip : MonoBehaviour
     }
 
     protected virtual void Fire()
-    {
-
-
+    {        
         Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
-
     }
 
     private void FixedUpdate()
