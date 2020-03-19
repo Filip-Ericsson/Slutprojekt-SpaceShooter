@@ -7,7 +7,7 @@ class DiagonalLazer : LazerController
     
     Vector3 diagonal = new Vector3(0.5f, 1f);
 
-    public int xDir = 1;
+    public float xDir = 0.6f;
 
     void Update()
     {
@@ -17,8 +17,8 @@ class DiagonalLazer : LazerController
 
     protected override void LazerMovement()
     {
+        diagonal = new Vector3(xDir, 1f);
+        transform.Translate(diagonal * speed * Time.deltaTime);
         
-        transform.Translate(xDir * diagonal * speed * Time.deltaTime);
-        //LeftLazer.transform.Translate(-diagonal * speed * Time.deltaTime);
     }
 }

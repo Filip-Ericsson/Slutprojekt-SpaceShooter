@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1729759449658044689}
   - component: {fileID: 1729759449658044694}
   - component: {fileID: 1729759449658044688}
-  - component: {fileID: 6557028583318355941}
+  - component: {fileID: -2221256822647877740}
   m_Layer: 0
   m_Name: RedShip
   m_TagString: Untagged
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4c49c3c42afc9479199bed0da214a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6557028583318355941
+--- !u!114 &-2221256822647877740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,10 +104,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729759449658044695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9297731ec525b2348b34db2bea0a3498, type: 3}
+  m_Script: {fileID: 11500000, guid: 1032aa3cb76f13e4281a3104c5c39602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lazerBeam: {fileID: 6656094742103503198, guid: 866dff8819500c04990bd30cf31a91c3,
+  lazerBeam: {fileID: 6656094742103503198, guid: 95d8c43bc910ad54c8fd0f25969283b1,
     type: 3}
   player: {fileID: 1729759449658044695}
   projectileCooldown: 0.25
