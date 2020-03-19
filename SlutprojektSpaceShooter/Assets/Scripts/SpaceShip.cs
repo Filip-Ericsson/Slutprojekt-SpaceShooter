@@ -17,7 +17,10 @@ public class SpaceShip : MonoBehaviour
 
     protected virtual void Fire()
     {        
+        GameObject leftLazr =  Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
         Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
+
+        leftLazr.GetComponent<DiagonalLazer>().xDir = -1;
     }
 
     private void FixedUpdate()

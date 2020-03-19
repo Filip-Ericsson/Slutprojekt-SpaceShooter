@@ -107,3 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  RightLazer: {fileID: 6656094742103503198}
+  LeftLazer: {fileID: 6656094742103503198}

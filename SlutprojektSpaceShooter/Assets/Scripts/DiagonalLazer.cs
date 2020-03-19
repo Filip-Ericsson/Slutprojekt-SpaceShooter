@@ -4,7 +4,10 @@ using UnityEngine;
 
 class DiagonalLazer : LazerController
 {
+    
     Vector3 diagonal = new Vector3(0.5f, 1f);
+
+    public int xDir = 1;
 
     void Update()
     {
@@ -14,6 +17,8 @@ class DiagonalLazer : LazerController
 
     protected override void LazerMovement()
     {
-        transform.Translate(diagonal * speed * Time.deltaTime);
+        
+        transform.Translate(xDir * diagonal * speed * Time.deltaTime);
+        //LeftLazer.transform.Translate(-diagonal * speed * Time.deltaTime);
     }
 }
