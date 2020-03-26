@@ -12,7 +12,7 @@ public class SpaceShip : MonoBehaviour
     private float nextFire;
     void Start()
     {
-
+        
     }
 
     protected virtual void Fire()

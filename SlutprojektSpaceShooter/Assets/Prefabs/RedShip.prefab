@@ -110,4 +110,4 @@ MonoBehaviour:
   lazerBeam: {fileID: 6656094742103503198, guid: 95d8c43bc910ad54c8fd0f25969283b1,
     type: 3}
   player: {fileID: 1729759449658044695}
-  projectileCooldown: 0.25
+  projectileCooldown: 0.5

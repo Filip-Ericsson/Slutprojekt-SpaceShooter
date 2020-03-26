@@ -5,20 +5,26 @@ using UnityEngine;
 public class RepublicAlternatingShip : RepublicDiagonalShip
 {
     // Start is called before the first frame update
-    bool alternatingFire;
+    bool alternatingFire = false;
     protected override void Fire()
     {
-        if(alternatingFire == true)
+        GameObject leftLazr = Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
+        GameObject rightLazr = Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
+        
+        if (alternatingFire == true)
         {
-            base.Fire();
+            /*Debug.Log("Fire!");
+            base.Fire();*/
+            leftLazr.GetComponent<DiagonalLazer>().xDir = -0.2f;
+            leftLazr.GetComponent<DiagonalLazer>().yDir = 3f;
+            rightLazr.GetComponent<DiagonalLazer>().xDir = 0.2f;
+            rightLazr.GetComponent<DiagonalLazer>().yDir = 3f;
+
             alternatingFire = false;
         }
         else
         {
-            GameObject leftLazr = Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
-            GameObject rightLazr = Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
-            leftLazr.GetComponent<DiagonalLazer>().xDir = -0.8f;
-            rightLazr.GetComponent<DiagonalLazer>().xDir = 0.7f;
+            base.Fire();
             alternatingFire = true;
         }
         
