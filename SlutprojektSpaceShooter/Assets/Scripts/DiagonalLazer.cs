@@ -10,16 +10,21 @@ class DiagonalLazer : LazerController
     public float xDir = 0.6f;
     public float yDir = 1f;
 
-    void Update()
+    /*void Update()
     {
         DestroyLazer();
         LazerMovement();
-    }
+    }*/
 
     protected override void LazerMovement()
     {
         diagonal = new Vector3(xDir, yDir);
         transform.Translate(diagonal * speed * Time.deltaTime);
-        
+
+        if (transform.position.y > 8f)
+        {
+            DestroyLazer();
+        }
+
     }
 }

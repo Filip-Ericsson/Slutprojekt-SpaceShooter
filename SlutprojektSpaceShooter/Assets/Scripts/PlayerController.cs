@@ -7,21 +7,26 @@ public class PlayerController : MonoBehaviour
     private float speedX = 5f;
     private float speedY = 0.1f;
     // Use this for initialization
+
+
+
     void Start()
     {
-        
+
     }
 
-
-    void PlayerMovement(float speedX, float speedY)
+    public void PlayerMovement(float speedX, float speedY)
     {
+
+        Debug.Log(speedX);
+
         float xAxis = Input.GetAxisRaw("Horizontal");
         //Debug.Log(xAxis);
-
+        Debug.Log(speedX);
         transform.Translate(Vector3.right * speedX * xAxis * Time.deltaTime);
         speedX += 0.2f;
         speedX = Mathf.Clamp(speedX, 5f, 8f);
-
+        Debug.Log(speedX);
         //print(transform.position.x);
 
 
@@ -68,11 +73,15 @@ public class PlayerController : MonoBehaviour
         PlayerWarp();
 
     }
-    /*void OnCollisionEnter2D()
-    {
-        FindObjectOfType<Game_Manager>().EndGame();
 
+   void OnCollisionEnter2D(Collision2D collision)
+    {        
+        if(collision.gameObject.tag == "asteroid")
+        {
+            Debug.Log("ASTEROID!");
+            FindObjectOfType<GameManager>().EndGame();
+        }
 
-    }*/
+    }
 
 }
