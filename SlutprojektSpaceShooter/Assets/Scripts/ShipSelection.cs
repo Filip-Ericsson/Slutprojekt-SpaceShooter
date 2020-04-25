@@ -13,24 +13,22 @@ public class ShipSelection : MonoBehaviour
 {
 
     public GameObject[] spaceShipList;
-    public int a;
-    Vector3 playerSpawnPoint = new Vector3(0f, -4.5f, -3f);
+    
+    
     void Start()
     {
         spaceShipList = new GameObject[transform.childCount];
        
+        //Alla skepp finns som barn under ett tomt gameObject i hirarkin, när användaren väljer ett skepp genom att trycka på en knapp i scenen 
         for (int i = 0; i < transform.childCount; i++)
         {
             spaceShipList[i] = transform.GetChild(i).gameObject;
         }
-
-        //PlayerShipSpawn(spaceShipList[PlayerPrefs.GetInt("SelectedShip")]);
-        PlayerShipSpawn(PlayerPrefs.GetInt("SelectedShip"));
+        
+        PlayerShipSpawn(PlayerPrefs.GetInt("SelectedShip")); //för att värdet ska färdas mellan scener använder jag PlayerPrefs, lånade detta från stackOverflow så är inte helt säker på mekaniken bakom, men det funkar
     }
-    public void PlayerShipSpawn(int whichShipToSpawn)
-    {
-        //GameObject playerShip
-        //Instantiate(playerShip, playerSpawnPoint, Quaternion.identity);
+    public void PlayerShipSpawn(int whichShipToSpawn) //denna metod aktiverar det skepp som användaren valde i menyn i föregående scen
+    {        
         spaceShipList[whichShipToSpawn].SetActive(true);
     }
 

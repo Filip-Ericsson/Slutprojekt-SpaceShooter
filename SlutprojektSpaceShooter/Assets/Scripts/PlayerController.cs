@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//samma script som när vi gjorde detta i unity shooter förra året
 public class PlayerController : MonoBehaviour
 {
     private float speedX = 5f;
     private float speedY = 0.1f;
-    // Use this for initialization
-
-
-
-    void Start()
-    {
-
-    }
+    
+    
 
     public void PlayerMovement(float speedX, float speedY)
     {

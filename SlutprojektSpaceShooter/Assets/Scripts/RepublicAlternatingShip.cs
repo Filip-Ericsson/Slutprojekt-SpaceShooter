@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class RepublicAlternatingShip : RepublicDiagonalShip
 {
-    // Start is called before the first frame update
-    bool alternatingFire = false;
+    
+    //detta script som ärver från RepublicDiagonalShip förändrar hur skeppet skjuter
+    bool alternatingFire = false; //varranat skott skjuter diagonalt och varranat skjuter frammåt
     protected override void Fire()
     {
         GameObject leftLazr = Instantiate(lazerBeam, player.transform.position + lazerSpawnOffset, Quaternion.identity);
